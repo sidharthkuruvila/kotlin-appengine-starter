@@ -5,7 +5,7 @@ This is a starter project for appengine apps writen in kotlin.
 
 It uses
 
- * Jotlin
+ * Kotlin 1.1.2
  * Jersey 2
 
 

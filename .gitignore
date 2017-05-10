@@ -86,3 +86,6 @@ fabric.properties
 .gradle/
 .idea/
 build/
+
+#Avoid commiting the plaintext Service account key
+gae.json

@@ -1,25 +1,26 @@
-package kuruvila
+package kuruvila.resource
 
-import java.util.*
+import kuruvila.service.HelloService
+import javax.inject.Inject
 import javax.ws.rs.GET
 import javax.ws.rs.Path
 import javax.ws.rs.Produces
 import javax.ws.rs.core.MediaType
 
 @Path("/")
-class HelloResource {
+class HelloResource @Inject constructor(val service: HelloService){
 
     @GET
     @Path("/hello")
     fun hello(): String {
-        return "Hello There"
+        return service.hello()
     }
 
     @GET
     @Path("/json")
     @Produces(MediaType.APPLICATION_JSON)
     fun json(): JsonResponse {
-        val j = JsonResponse("Hello World")
+        val j = JsonResponse(service.hello())
         return j
     }
 }

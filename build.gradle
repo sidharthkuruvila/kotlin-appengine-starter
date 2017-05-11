@@ -31,6 +31,9 @@ dependencies {
   compile "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
   compile 'org.glassfish.jersey.containers:jersey-container-servlet-core:2.25.1'
   compile 'com.fasterxml.jackson.jaxrs:jackson-jaxrs-json-provider:2.8.8'
+  compile 'com.squarespace.jersey2-guice:jersey2-guice-impl:1.0.6'
+  compile 'com.google.inject.extensions:guice-servlet:4.1.0'
+
 
 }
 

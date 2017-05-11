@@ -6,8 +6,9 @@ This is a starter project for appengine apps writen in kotlin.
 It uses
 
  * Kotlin 1.1.2
- * Jersey2 2.25.1
+ * Jersey 2.25.1
  * Jackson 2.8.8
+ * Guice 4.1.0
 
 
 Deploying to App Engine

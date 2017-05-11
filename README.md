@@ -1,7 +1,14 @@
 Kotlin App Engine starter
 ------------------------
 
+[![Build Status](https://travis-ci.org/sidharthkuruvila/kotlin-appengine-starter.svg?branch=master)](https://travis-ci.org/sidharthkuruvila/kotlin-appengine-starter)
+
 This is a starter project for appengine apps writen in kotlin.
+
+The production branch is deployed on appengine [link](https://sidharth-165204.appspot.com/hello)
+
+Deployment status: [![Build Status](https://travis-ci.org/sidharthkuruvila/kotlin-appengine-starter.svg?branch=production)](https://travis-ci.org/sidharthkuruvila/kotlin-appengine-starter)
+
 
 It uses
 

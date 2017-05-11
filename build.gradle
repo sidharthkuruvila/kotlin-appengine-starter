@@ -29,7 +29,9 @@ dependencies {
   appengineSdk 'com.google.appengine:appengine-java-sdk:1.9.52'
   compile 'javax.servlet:servlet-api:2.5'
   compile "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
-  compile group: 'org.glassfish.jersey.containers', name: 'jersey-container-servlet-core', version: '2.25.1'
+  compile 'org.glassfish.jersey.containers:jersey-container-servlet-core:2.25.1'
+  compile 'com.fasterxml.jackson.jaxrs:jackson-jaxrs-json-provider:2.8.8'
+
 }
 
 compileKotlin {

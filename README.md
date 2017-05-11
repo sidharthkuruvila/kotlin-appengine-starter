@@ -6,7 +6,8 @@ This is a starter project for appengine apps writen in kotlin.
 It uses
 
  * Kotlin 1.1.2
- * Jersey 2
+ * Jersey2 2.25.1
+ * Jackson 2.8.8
 
 
 Deploying to App Engine
@@ -18,11 +19,9 @@ Deploying to App Engine
  * [Create a project](https://console.cloud.google.com/projectcreate)
  * Set the project name in appengine-web
  
- 
-    ./gradlew appengineUpdate
+        ./gradlew appengineUpdate
     
-   
-   
+
 ### Using travis
 
  * Install the travis cli

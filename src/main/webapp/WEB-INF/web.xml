@@ -12,6 +12,14 @@
                 kuruvila
             </param-value>
         </init-param>
+
+        <init-param>
+            <param-name>jersey.config.server.provider.classnames</param-name>
+            <param-value>
+                kuruvila.config.JacksonFeature
+            </param-value>
+        </init-param>
+
     </servlet>
     <servlet-mapping>
         <servlet-name>JerseyServlet</servlet-name>

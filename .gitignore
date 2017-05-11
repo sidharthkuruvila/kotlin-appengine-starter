@@ -82,7 +82,6 @@ crashlytics.properties
 crashlytics-build.properties
 fabric.properties
 
-.gitignore
 .gradle/
 .idea/
 build/

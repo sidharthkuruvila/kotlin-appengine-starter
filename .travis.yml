@@ -8,6 +8,7 @@ before_install:
   - sudo apt-get install python3
 
 before_deploy:
+  - tar xvf secrets.tar
   - python3 scripts/replace_vars.py
 
 deploy:

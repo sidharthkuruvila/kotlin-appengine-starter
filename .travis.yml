@@ -3,6 +3,13 @@ language: java
 jdk:
   - oraclejdk8
 
+before_install:
+  - sudo apt-get update
+  - sudo apt-get install python3
+
+before_deploy:
+  - python3 scripts/replace_vars.py
+
 deploy:
   provider: script
   skip_cleanup: true

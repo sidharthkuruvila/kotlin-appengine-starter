@@ -86,5 +86,7 @@ fabric.properties
 .idea/
 build/
 
-#Avoid commiting the plaintext Service account key
+#Avoid commiting the plaintext Service account key and app config
 gae.json
+app_config.properties
+

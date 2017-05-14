@@ -3,7 +3,7 @@ import re
 
 vars_file_name = "app_config.properties"
 patterns = [
-    #"src/main/resources/templates/*.mustache",
+    "src/main/resources/templates/*.mustache",
     "src/main/webapp/WEB-INF/appengine-web.xml"
 ]
 

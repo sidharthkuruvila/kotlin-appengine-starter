@@ -13,11 +13,12 @@ class JerseyGuiceServletContextListener : ServletContextListener {
     override fun contextInitialized(sce: ServletContextEvent?) {
         val modules = arrayListOf(
                 JerseyGuiceModule("__HK2_Generated_0"),
-                ServletModule())
+                ServletModule(),
+                ApplicationModule())
 
         modules.add(object : AbstractModule() {
             override fun configure() {
-                // ...
+
             }
         })
 

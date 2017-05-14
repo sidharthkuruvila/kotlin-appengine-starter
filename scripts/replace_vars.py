@@ -3,14 +3,14 @@ import re
 
 vars_file_name = "app_config.properties"
 patterns = [
-    "src/main/resources/templates/*.mustache",
+    #"src/main/resources/templates/*.mustache",
     "src/main/webapp/WEB-INF/appengine-web.xml"
 ]
 
 
 def read_vars_file():
     s = open(vars_file_name).readlines()
-    return dict(e.strip().split("=", maxsplit=1) for e in s)
+    return dict(re.split("=", e.strip(), maxsplit=1) for e in s)
 
 
 unknown_vars = set()

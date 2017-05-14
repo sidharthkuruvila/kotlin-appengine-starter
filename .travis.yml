@@ -1,9 +1,10 @@
+dist: trusty
+sudo: false
+
 language: java
 jdk:
 - oraclejdk8
-before_install:
-- sudo apt-get update
-- sudo apt-get install python3
+
 before_deploy:
 - openssl aes-256-cbc -K $encrypted_4ad71e6565df_key -iv $encrypted_4ad71e6565df_iv
   -in secrets.tar.enc -out secrets.tar -d

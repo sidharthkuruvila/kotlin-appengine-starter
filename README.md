@@ -41,18 +41,21 @@ Deploying to App Engine
         git checkout -b production
     
  * [Create a project](https://console.cloud.google.com/projectcreate)
- * Set the ${PROJECT_NAME} in [appengine-web.xml](src/main/webapp/WEB-INF/appengine-web.xml)
+ * Set the PROJECT_NAME and other properties in [app_config.properties](src/main/webapp/WEB-INF/appengine-web.xml)
  * Create credentials of type [Service account key](https://console.developers.google.com/apis/credentials/serviceaccountkey) as json
  * Copy the key into the project
  
         mv ~/Downloads/<key_name.json> gae.json
  
- * Encrypt the key
+ * Encrypt the secure files
  
-        travis encrypt-file gae.json --add before_deploy
+       ./scripts/encrypt.sh
         
+ * Reorder the commands in the before_deploy stage in .travis.yml so 
+ that the call to replace_vars.py is after decryption of app-config.properties
+ 
  * Commit the changes and push
  
-        git add gae.json.enc
+        git add secret.tar.enc
         git commit -am 'Updated project name and added auth key for gae'
         git push

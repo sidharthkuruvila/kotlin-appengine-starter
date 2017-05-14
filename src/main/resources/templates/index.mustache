@@ -1,0 +1,21 @@
+<html>
+<head>
+
+</head>
+<body>
+<h1>{{text}}</h1>
+<script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
+<script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "${firebase.api_key}",
+        authDomain: "${appengine.project_name}.firebaseapp.com",
+        databaseURL: "${appengine.project_name}.firebaseio.com",
+        projectId: "${appengine.project_name}",
+        storageBucket: "${appengine.project_name}.appspot.com",
+        messagingSenderId: "${firebase.messaging_sender_id}"
+    };
+    firebase.initializeApp(config);
+</script>
+</body>
+</html>

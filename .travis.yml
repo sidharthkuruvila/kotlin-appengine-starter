@@ -5,9 +5,10 @@ before_install:
 - sudo apt-get update
 - sudo apt-get install python3
 before_deploy:
+- openssl aes-256-cbc -K $encrypted_4ad71e6565df_key -iv $encrypted_4ad71e6565df_iv
+  -in secrets.tar.enc -out secrets.tar -d
 - tar xvf secrets.tar
 - python3 scripts/replace_vars.py
-
 deploy:
   provider: script
   skip_cleanup: true
